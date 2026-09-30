@@ -1,5 +1,13 @@
 # Pomodoro — focus timer for the Omarchy bar
 
+## Integration checks
+
+On an Omarchy machine with an active Wayland session, run
+`python3 tests/run-integration.py`. This checks the popup button handlers,
+inline settings updates, config hot reload and paused-session restoration
+against the installed shell UI and scoped plugin API. It uses a temporary
+copy and isolated timer state; no popup or break overlay is displayed.
+
 A pomodoro timer for the [Omarchy](https://omarchy.org) shell. A countdown sits
 in the bar next to the clock, a click opens the controls, and every break takes
 over the screen with a progress ring so you actually step away. Notifications
